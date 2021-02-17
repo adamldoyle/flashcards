@@ -87,7 +87,6 @@ export default function Card({
             type="submit"
             autoFocus
             style={{
-              fontSize: '7rem',
               backgroundColor: 'inherit',
               border: 'none',
               color: '#ffffff',
@@ -123,6 +122,7 @@ export default function Card({
         style={{
           display: 'flex',
           justifyContent: 'space-evenly',
+          alignItems: 'center',
           width: '100%',
         }}
       >
