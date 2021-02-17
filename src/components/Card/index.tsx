@@ -58,20 +58,31 @@ export default function Card({
           flexDirection: 'column',
           justifyContent: 'space-evenly',
           alignItems: 'center',
-          fontSize: '10rem',
+          fontSize: '8rem',
         }}
       >
-        <div>
-          {!correct && (
-            <span
-              style={{ textDecoration: 'line-through', marginRight: '5rem' }}
-            >
-              {submittedAnswer}
-            </span>
-          )}
-          {answer}
-        </div>
-        <form onSubmit={nextQuestion}>
+        <div style={{ fontSize: '8rem' }}>
+          {firstNumber} {operator} {secondNumber}
+        </div>{' '}
+        <div style={{ fontSize: '6rem' }}>=</div>
+        <form
+          onSubmit={nextQuestion}
+          style={{
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            width: '100%',
+          }}
+        >
+          <div>
+            {!correct && (
+              <span
+                style={{ textDecoration: 'line-through', marginRight: '1rem' }}
+              >
+                {submittedAnswer}
+              </span>
+            )}
+            {answer}
+          </div>
           <button
             type="submit"
             autoFocus
@@ -82,7 +93,7 @@ export default function Card({
               color: '#ffffff',
             }}
           >
-            Next <ArrowForwardIosIcon style={{ fontSize: '4rem' }} />
+            <ArrowForwardIosIcon style={{ fontSize: '4rem' }} />
           </button>
         </form>
       </div>
@@ -109,7 +120,11 @@ export default function Card({
       <div style={{ fontSize: '6rem' }}>=</div>
       <form
         onSubmit={onSubmit}
-        style={{ display: 'flex', justifyContent: 'space-evenly' }}
+        style={{
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          width: '100%',
+        }}
       >
         <input
           type="number"
