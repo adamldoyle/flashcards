@@ -46,8 +46,9 @@ function App() {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
+        marginTop: '1rem',
       }}
     >
       <Card

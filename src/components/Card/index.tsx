@@ -48,7 +48,7 @@ export default function Card({
       <div
         style={{
           width: '70vw',
-          height: '70vh',
+          height: '50vh',
           border: '10px solid #000077',
           borderRadius: 10,
           backgroundColor: correct ? '#007700' : '#770000',
@@ -93,7 +93,7 @@ export default function Card({
     <div
       style={{
         width: '70vw',
-        height: '70vh',
+        height: '50vh',
         border: '10px solid #000077',
         borderRadius: 10,
         textAlign: 'center',
