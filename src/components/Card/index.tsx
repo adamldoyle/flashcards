@@ -48,6 +48,7 @@ export default function Card({
       <div
         style={{
           width: '70vw',
+          maxWidth: 800,
           height: '50vh',
           border: '10px solid #000077',
           borderRadius: 10,
@@ -103,6 +104,7 @@ export default function Card({
     <div
       style={{
         width: '70vw',
+        maxWidth: 800,
         height: '50vh',
         border: '10px solid #000077',
         borderRadius: 10,
